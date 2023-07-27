@@ -12,6 +12,7 @@
 #define _CONTROL 6
 
 #define CTT_ESC CTL_T(KC_ESC) // escape when tapped, control when held
+#define CTT_TAB CTL_T(KC_TAB) // tab when tapped, control when held
 #define CTT_ENT CTL_T(KC_ENT) // space on tap, control when held
 #define CTL_TAB LCTL(KC_TAB) // control + tab
 #define CS_TAB C(S(KC_TAB)) //Control + Shift + Tab, for reopening tabs
@@ -57,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      XXXXXXX,  KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,   KC_MEH,           KC_HYPR,  KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH,XXXXXXX,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    LGT_ESC, CTT_ENT, LYR_LWR,                   LYR_UPR, KC_SPC,  KC_TAB
+                                    LGT_ESC, CTT_ENT, LYR_LWR,                   LYR_UPR, KC_SPC,  CTT_TAB
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
   [_QWERTY] = LAYOUT(
@@ -70,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      OS_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_MEH,           KC_HYPR,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, OS_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    LGT_ESC, CTT_ENT, LYR_LWR,                   LYR_UPR, KC_SPC,  KC_TAB
+                                    LGT_ESC, CTT_ENT, LYR_LWR,                   LYR_UPR, KC_SPC,  CTT_TAB
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
